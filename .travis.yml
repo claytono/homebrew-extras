@@ -19,3 +19,5 @@ before_install:
 
 script:
   - brew test-bot
+  - brew install -v ./Formula/*.rb
+  - brew test ./Formula/*.rb
