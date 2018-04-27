@@ -39,9 +39,7 @@ class Borgmatic < Formula
   end
 
   def install
-    inreplace "borgmatic/borg/create.py" do |s|
-      s.gsub! "'--info',", "'--info', '--progress',"
-    end
+    inreplace "borgmatic/borg/create.py", "'--info',", "'--info', '--progress',"
     virtualenv_install_with_resources
   end
 
