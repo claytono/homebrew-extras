@@ -22,7 +22,7 @@ script:
   - |
     for i in Formula/*.rb; do
       brew install -v $i
+      brew test $(basename $i .rb)
       brew uninstall $(basename $i .rb)
 
     done
-  - brew test ./Formula/*.rb
