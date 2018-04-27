@@ -19,5 +19,10 @@ before_install:
 
 script:
   - brew test-bot
-  - brew install -v ./Formula/*.rb
+  - |
+    for i in Formula/*.rb; do
+      brew install -v $i
+      brew uninstall $(basename $i .rb)
+
+    done
   - brew test ./Formula/*.rb
