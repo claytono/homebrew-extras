@@ -19,11 +19,4 @@ before_install:
 
 script:
   - brew test-bot
-  - |
-    for i in Formula/*.rb; do
-      echo "travis_fold:start:$(basename $i .rb)"
-      brew install -v $i
-      brew test $(basename $i .rb)
-      brew uninstall $(basename $i .rb)
-      echo "travis_fold:end:$(basename $i .rb)"
-    done
+  - scripts/travis.sh
