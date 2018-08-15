@@ -3,8 +3,8 @@ class Borgmatic < Formula
 
   desc "Wrapper for the Borg backup software that creates and prunes backups"
   homepage "https://torsion.org/borgmatic/"
-  url "https://files.pythonhosted.org/packages/66/26/36f96dc82efa3a9a6bc0b97fff4343dc27a7ac984c4efda79cf223f16f81/borgmatic-1.1.15.tar.gz"
-  sha256 "4592092cb238905a233fdc01d0f87a5e613e02413ea93091a4dba1cdbcc13b5f"
+  url "https://files.pythonhosted.org/packages/71/aa/ada5c52eda4083d2b572b338efe8d767d7c516dd0444739d6cc0cef24ace/borgmatic-1.2.2.tar.gz"
+  sha256 "3d3079f84b2f4e13f7052c109adae358ef3383405e028aa6d3bbb698240de2af"
 
   depends_on "python"
 
@@ -19,18 +19,18 @@ class Borgmatic < Formula
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/c5/39/4da7c2dbc4f023fba5fb2325febcadf0d0ce0efdc8bd12083a0f65d20653/python-dateutil-2.7.2.tar.gz"
-    sha256 "9d8074be4c993fbe4947878ce593052f71dac82932a677d49194d8ce9778002e"
+    url "https://files.pythonhosted.org/packages/a0/b0/a4e3241d2dee665fea11baec21389aec6886655cd4db7647ddf96c3fad15/python-dateutil-2.7.3.tar.gz"
+    sha256 "e27001de32f627c22380a688bcc43ce83504a7bc5da472209b4c70f02829f0b8"
   end
 
   resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz"
-    sha256 "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
+    url "https://files.pythonhosted.org/packages/9e/a3/1d13970c3f36777c583f136c136f804d70f500168edc1edea6daa7200769/PyYAML-3.13.tar.gz"
+    sha256 "3ef3092145e9b70e3ddd2c7ad59bdd0252a94dfe3949721633e41344de00a6bf"
   end
 
   resource "ruamel.yaml" do
-    url "https://files.pythonhosted.org/packages/10/aa/f31c8a858e23fe5b14c59e6a03ae80b4cb76353c184df48a582a55eb2674/ruamel.yaml-0.15.0.tar.gz"
-    sha256 "f9f4a50422acf4a6ab55b568ae879b3ceb62e8e62a60022cb88816c17e40782e"
+    url "https://files.pythonhosted.org/packages/94/c9/dac4209ac5d1b08ce7943cf5b8597eb41322145aa9a52f7aef2474bee1f9/ruamel.yaml-0.15.55.tar.gz"
+    sha256 "bc2a096c34e33169fc65d63c2e1f1f0bfa461187d9ad2efc8c06857322b5cf1c"
   end
 
   resource "six" do
